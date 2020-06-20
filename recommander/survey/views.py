@@ -1,6 +1,7 @@
 from django.http import HttpResponse
-from datetime import datetime
 from django.shortcuts import redirect, render
+from datetime import datetime
+from .models import Movies
 
 
 def index(request):
@@ -23,7 +24,9 @@ def favorite_movie(request):
     survey_stage = request.session.get('survey_stage', 1)
     if survey_stage != 1:
         return redirect('index')
-    return HttpResponse('At Survey Stage 1: Favorite Movie')
+    
+    top_movies = Movies.objects.all().order_by('-vote_count','-vote_average')[:10]
+    return render(request, 'survey/favorite.html',context={'movies':top_movies})
 
 def watched_movies(request):
     survey_stage = request.session.get('survey_stage', 1)

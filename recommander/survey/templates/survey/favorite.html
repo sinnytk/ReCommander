@@ -1,0 +1,37 @@
+{% extends 'recommander/base.html' %}
+{% load static %}
+
+
+{% block local_head %}
+<link rel="stylesheet" href="{% static 'survey/favorite.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="search">
+    <div class="section__info">
+        <h3>
+            Select your favourite movie.
+        </h3>
+        <p>To initialize the algorithm, select your favourite movie</p>
+    </div>
+    <div class="section__search">
+        <form method="post">
+            <input type="search" placeholder="Or search for your favourite movie...">
+            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+    </div>
+</section>
+
+<section class="movies">
+    {% for movie in movies %}
+    <div class="movie">
+        <div class="movie__poster">
+            <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" srcset="">
+        </div>
+        <div class="movie__info">
+            <span>{{movie.title}}</span>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}

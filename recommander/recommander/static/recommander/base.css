@@ -1,0 +1,101 @@
+html {
+  font-size:62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  background-color: #080808;
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-size: 4.5rem;
+  font-family: 'Staatliches', cursive;
+  font-weight: lighter;
+}
+h2 {
+  font-size: 8rem;
+  font-family: 'Staatliches', cursive;
+  font-weight: lighter;
+
+}
+h3{
+  font-size: 3.5rem;
+}
+p{
+  font-size:2.5rem;
+}
+li {
+  font-size: 2.5rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  font-size: 2rem;
+  list-style-type: none;
+}
+input{
+  font-size: 2rem;
+}
+nav{
+  width: 80%;
+  margin:auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav #logo{
+  flex:4;
+  position: relative;
+}
+nav #logo::after{
+  content:"";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 19rem;
+  height: 4.3rem;
+  background: #772222;
+  transform: translate(22%);
+  mix-blend-mode: screen;
+}
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  flex: 1
+}
+
+.movies {
+  display: flex;
+}
+.movies .movie{
+  width: 20rem;
+  height: 25rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+.movies:hover .movie:not(:hover) {
+    opacity: .5;
+}
+.movie__poster{
+  flex:2
+}
+.movie__poster img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.movie__info span{
+  flex:1;
+  font-size: 2rem;
+}
