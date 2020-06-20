@@ -14,8 +14,13 @@ We plan to use
 - ~~Select dataset~~
 - Denormalize database and feature selection[Bahawal]
 - ~~Start Django project[Tarun]~~
-- Populate Postgres database from MovieLens Dataset and connect with Django[Tarun]
-- Find a way to deploy the model
+- ~~Populate Postgres database from MovieLens Dataset and connect with Django[Tarun]~~
+- Survey web application development [Tarun]
+    - Research on saving survey instance without need of creating a user
+    - Develop startup screen to ask for user's favourite movie
+- As ToDo is getting longer, let's move it to a different markdown file
+- Find a way to deploy the model[Bahawal]
+
 
 ## Resources
 | Tool  | Link |

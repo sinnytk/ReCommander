@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 django = "==2.2.13"
+dj-database-url = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.6"
