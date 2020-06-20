@@ -13,8 +13,8 @@ We plan to use
 ### Todos
 - ~~Select dataset~~
 - Denormalize database and feature selection[Bahawal]
-- Start Django project[Tarun]
-- Populate database from MovieLens Dataset and connect with Django[Tarun]
+- ~~Start Django project[Tarun]~~
+- Populate Postgres database from MovieLens Dataset and connect with Django[Tarun]
 - Find a way to deploy the model
 
 ## Resources
