@@ -16,8 +16,9 @@ We plan to use
 - ~~Start Django project[Tarun]~~
 - ~~Populate Postgres database from MovieLens Dataset and connect with Django[Tarun]~~
 - Survey web application development [Tarun]
-    - Research on saving survey instance without need of creating a user
-    - Develop startup screen to ask for user's favourite movie
+    - ~~Research on saving survey instance without need of creating a user~~
+    - ~~Develop startup screen to ask for user's favourite movie~~
+    - Start implementing proximity matrix logic
 - As ToDo is getting longer, let's move it to a different markdown file
 - Find a way to deploy the model[Bahawal]
 
