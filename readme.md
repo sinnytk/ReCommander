@@ -1,5 +1,5 @@
 # ReCommander
-### A Machine Learning based content-based recommedner system
+### A Machine Learning based content-based recommender system
 ## CS-421 (Machine Learning)
 
 ReCommander is our course project, very special due to times it was created it :) #NeverForget2020
