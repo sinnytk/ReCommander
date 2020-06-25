@@ -4,6 +4,7 @@
 
 {% block local_head %}
 <link rel="stylesheet" href="{% static 'survey/favorite.css' %}">
+<script src="{% static 'survey/favorite.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -15,23 +16,15 @@
         <p>To initialize the algorithm, select your favourite movie</p>
     </div>
     <div class="section__search">
-        <form method="post">
-            <input type="search" placeholder="Or search for your favourite movie...">
-            <button><i class="fa fa-search" aria-hidden="true"></i></button>
-        </form>
+        <input id="user-input" placeholder="Or search for your favourite movie...">
+        <button><i id="search-icon" class="fa fa-search" aria-hidden="true"></i></button>
     </div>
 </section>
-
-<section class="movies">
-    {% for movie in movies %}
-    <div class="movie">
-        <div class="movie__poster">
-            <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" srcset="">
-        </div>
-        <div class="movie__info">
-            <span>{{movie.title}}</span>
-        </div>
-    </div>
-    {% endfor %}
-</section>
+<form id="movie-form" method="post">
+    {% csrf_token %}
+    <input id="selected-movie" type="hidden" name="selected_movie" value="">
+    <section class="movies" id="movieSection">
+        {% include 'survey/movies.html' %}
+    </section>
+</form>
 {% endblock %}

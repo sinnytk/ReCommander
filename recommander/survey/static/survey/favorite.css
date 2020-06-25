@@ -16,7 +16,8 @@
 	border-left: none;
     border-right: none;
     width: 50rem;
-    float: left;
+	float: left;
+	color:rgb(219, 219, 219);
 }
 .section__search input:focus {
 	outline: none;

@@ -1,0 +1,11 @@
+.favourite_movie{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+.section__info p{
+    padding: 3rem 3rem;
+    font-size:2rem;
+}

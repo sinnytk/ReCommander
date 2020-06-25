@@ -1,0 +1,10 @@
+{% for movie in movies %}
+<div class="movie" data-movie-id={{movie.id}} onclick="select_movie()">
+    <div class="movie__poster">
+        <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="" srcset="">
+    </div>
+    <div class="movie__info">
+        <span>{{movie.title}}</span>
+    </div>
+</div>
+{% endfor %}

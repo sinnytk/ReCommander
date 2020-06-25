@@ -1,0 +1,26 @@
+{% extends 'recommander/base.html' %}
+{% load static %}
+
+
+{% block local_head %}
+<link rel="stylesheet" href="{% static 'survey/watched.css' %}">
+<script src="{% static 'survey/watched.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<section class="favourite_movie">
+    <div class="section__info">
+        <h3>
+            Similar movies based on {{selected_movie.title}}
+        </h3>
+        <p>To refine your playlist, keep selecting movies you've watched then click NEXT</p>
+    </div>
+</section>
+<form id="movie-form" method="post">
+    {% csrf_token %}
+    <input id="selected-movie" type="hidden" name="selected_movie" value="">
+    <section class="movies" id="movieSection">
+        {% include 'survey/movies.html' %}
+    </section>
+</form>
+{% endblock %}
