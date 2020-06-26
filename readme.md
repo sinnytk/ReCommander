@@ -12,7 +12,7 @@ We plan to use
 * Sci-kit Learn - To implement the RF algorithm in Python
 ### Todos
 - ~~Select dataset~~
-- Denormalize database and feature selection[Bahawal]
+- ~Denormalize database and feature selection[Bahawal]~
 - ~~Start Django project[Tarun]~~
 - ~~Populate Postgres database from MovieLens Dataset and connect with Django[Tarun]~~
 - Survey web application development [Tarun]
